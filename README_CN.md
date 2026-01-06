@@ -43,7 +43,7 @@
 ### 方式一：自动安装（推荐）
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/vim-ide-enhanced.git
+git clone https://github.com/TbusOS/vim-ide-enhanced.git
 cd vim-ide-enhanced
 bash install.sh
 ```
@@ -55,7 +55,7 @@ bash install.sh
 mv ~/.vimrc ~/.vimrc.bak
 
 # 2. 下载配置文件
-curl -fLo ~/.vimrc https://raw.githubusercontent.com/YOUR_USERNAME/vim-ide-enhanced/main/vimrc
+curl -fLo ~/.vimrc https://raw.githubusercontent.com/TbusOS/vim-ide-enhanced/main/vimrc
 
 # 3. 安装 vim-plug 插件管理器
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
@@ -548,7 +548,7 @@ mv ~/.vimrc.bak ~/.vimrc  # 恢复原配置
 
 **⭐ 如果觉得有用，请给个 Star！**
 
-**🐛 发现问题？** [提交 Issue](https://github.com/YOUR_USERNAME/vim-ide-enhanced/issues)
+**🐛 发现问题？** [提交 Issue](https://github.com/TbusOS/vim-ide-enhanced/issues)
 
 **💬 有问题？** 欢迎在 Issues 中讨论交流！
 

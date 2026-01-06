@@ -70,8 +70,8 @@ gh repo create vim-ide-enhanced --public --source=. --remote=origin --push
 从 GitHub 页面复制你的用户名，然后执行：
 
 ```bash
-# 替换 YOUR_USERNAME 为你的 GitHub 用户名
-git remote add origin https://github.com/YOUR_USERNAME/vim-ide-enhanced.git
+# 替换 TbusOS 为你的 GitHub 用户名
+git remote add origin https://github.com/TbusOS/vim-ide-enhanced.git
 
 # 设置主分支名为 main
 git branch -M main
@@ -137,7 +137,7 @@ git push -u origin main
    ### 📦 Installation
    
    ```bash
-   git clone https://github.com/YOUR_USERNAME/vim-ide-enhanced.git
+   git clone https://github.com/TbusOS/vim-ide-enhanced.git
    cd vim-ide-enhanced
    bash install.sh
    ```
@@ -158,23 +158,23 @@ git push -u origin main
 
 ## 🎨 步骤 7: 添加徽章（Badges）
 
-编辑 README.md 和 README_CN.md，将 `YOUR_USERNAME` 替换为你的 GitHub 用户名：
+编辑 README.md 和 README_CN.md，将 `TbusOS` 替换为你的 GitHub 用户名：
 
 ```markdown
-![GitHub stars](https://img.shields.io/github/stars/YOUR_USERNAME/vim-ide-enhanced?style=social)
-![GitHub forks](https://img.shields.io/github/forks/YOUR_USERNAME/vim-ide-enhanced?style=social)
-![GitHub issues](https://img.shields.io/github/issues/YOUR_USERNAME/vim-ide-enhanced)
-![GitHub license](https://img.shields.io/github/license/YOUR_USERNAME/vim-ide-enhanced)
+![GitHub stars](https://img.shields.io/github/stars/TbusOS/vim-ide-enhanced?style=social)
+![GitHub forks](https://img.shields.io/github/forks/TbusOS/vim-ide-enhanced?style=social)
+![GitHub issues](https://img.shields.io/github/issues/TbusOS/vim-ide-enhanced)
+![GitHub license](https://img.shields.io/github/license/TbusOS/vim-ide-enhanced)
 ![Vim Version](https://img.shields.io/badge/Vim-8.0%2B-green)
 ```
 
 然后提交更新：
 
 ```bash
-# 替换 YOUR_USERNAME
-sed -i 's/YOUR_USERNAME/你的用户名/g' README.md
-sed -i 's/YOUR_USERNAME/你的用户名/g' README_CN.md
-sed -i 's/YOUR_USERNAME/你的用户名/g' PROJECT_INFO.md
+# 替换 TbusOS
+sed -i 's/TbusOS/你的用户名/g' README.md
+sed -i 's/TbusOS/你的用户名/g' README_CN.md
+sed -i 's/TbusOS/你的用户名/g' PROJECT_INFO.md
 
 git add README.md README_CN.md PROJECT_INFO.md
 git commit -m "Update: Add GitHub username and badges"

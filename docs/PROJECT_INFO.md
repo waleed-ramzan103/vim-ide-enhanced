@@ -147,7 +147,7 @@ git commit -m "Initial commit: Vim IDE Enhanced v1.0.0"
 ### 3. 推送到 GitHub
 
 ```bash
-git remote add origin https://github.com/YOUR_USERNAME/vim-ide-enhanced.git
+git remote add origin https://github.com/TbusOS/vim-ide-enhanced.git
 git branch -M main
 git push -u origin main
 ```
@@ -166,10 +166,10 @@ git push -u origin main
 在 README.md 中更新：
 
 ```markdown
-![GitHub stars](https://img.shields.io/github/stars/YOUR_USERNAME/vim-ide-enhanced)
-![GitHub forks](https://img.shields.io/github/forks/YOUR_USERNAME/vim-ide-enhanced)
-![GitHub issues](https://img.shields.io/github/issues/YOUR_USERNAME/vim-ide-enhanced)
-![GitHub license](https://img.shields.io/github/license/YOUR_USERNAME/vim-ide-enhanced)
+![GitHub stars](https://img.shields.io/github/stars/TbusOS/vim-ide-enhanced)
+![GitHub forks](https://img.shields.io/github/forks/TbusOS/vim-ide-enhanced)
+![GitHub issues](https://img.shields.io/github/issues/TbusOS/vim-ide-enhanced)
+![GitHub license](https://img.shields.io/github/license/TbusOS/vim-ide-enhanced)
 ```
 
 ## 📝 后续任务
@@ -204,8 +204,8 @@ git push -u origin main
 
 ## 📧 联系方式
 
-- **GitHub**: https://github.com/YOUR_USERNAME/vim-ide-enhanced
-- **Issues**: https://github.com/YOUR_USERNAME/vim-ide-enhanced/issues
+- **GitHub**: https://github.com/TbusOS/vim-ide-enhanced
+- **Issues**: https://github.com/TbusOS/vim-ide-enhanced/issues
 - **Email**: your-email@example.com (可选)
 
 ## 📄 许可证
@@ -220,6 +220,6 @@ MIT License - 自由使用、修改、分发
 
 **项目版本**: v1.0.0  
 **创建日期**: 2026-01-06  
-**作者**: @YOUR_USERNAME  
+**作者**: @TbusOS  
 **状态**: 已完成，可发布
 

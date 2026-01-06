@@ -22,8 +22,8 @@
 
 [![Vim Version](https://img.shields.io/badge/Vim-8.0%2B-green.svg)](https://www.vim.org/)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/YOUR_USERNAME/vim-ide-enhanced?style=social)](https://github.com/YOUR_USERNAME/vim-ide-enhanced)
-[![GitHub forks](https://img.shields.io/github/forks/YOUR_USERNAME/vim-ide-enhanced?style=social)](https://github.com/YOUR_USERNAME/vim-ide-enhanced)
+[![GitHub stars](https://img.shields.io/github/stars/TbusOS/vim-ide-enhanced?style=social)](https://github.com/TbusOS/vim-ide-enhanced)
+[![GitHub forks](https://img.shields.io/github/forks/TbusOS/vim-ide-enhanced?style=social)](https://github.com/TbusOS/vim-ide-enhanced)
 
 [English](#) | [简体中文](README_CN.md)
 
@@ -167,7 +167,7 @@
 ### 方法 1：一键安装（推荐）
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/vim-ide-enhanced.git
+git clone https://github.com/TbusOS/vim-ide-enhanced.git
 cd vim-ide-enhanced
 bash install.sh
 ```
@@ -377,9 +377,9 @@ vim +PlugInstall +qall
 
 **⭐ 如果觉得有用，请给个 Star！**
 
-**📧 问题反馈：** [提交 Issue](https://github.com/YOUR_USERNAME/vim-ide-enhanced/issues)
+**📧 问题反馈：** [提交 Issue](https://github.com/TbusOS/vim-ide-enhanced/issues)
 
-**💬 讨论交流：** [Discussions](https://github.com/YOUR_USERNAME/vim-ide-enhanced/discussions)
+**💬 讨论交流：** [Discussions](https://github.com/TbusOS/vim-ide-enhanced/discussions)
 
 Made with ❤️ by Vim enthusiasts
 

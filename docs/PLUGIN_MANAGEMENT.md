@@ -562,5 +562,5 @@ Plug 'vim-airline/vim-airline', has('gui_running') ? {} : { 'on': [] }
 
 **💡 提示**：定期更新插件，享受最新功能！
 
-有问题？查看 [故障排除](#故障排除) 或提交 [Issue](https://github.com/YOUR_USERNAME/vim-ide-enhanced/issues)。
+有问题？查看 [故障排除](#故障排除) 或提交 [Issue](https://github.com/TbusOS/vim-ide-enhanced/issues)。
 

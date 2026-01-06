@@ -455,7 +455,7 @@ cat assets/README-template.md
 
 # 或替换现有 README
 cp assets/README-template.md README.md
-# 记得替换 YOUR_USERNAME
+# 记得替换 TbusOS
 ```
 
 ### 上传到 GitHub

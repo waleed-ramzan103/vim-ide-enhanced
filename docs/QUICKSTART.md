@@ -5,7 +5,7 @@
 ## 📦 安装（1分钟）
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/vim-ide-enhanced.git
+git clone https://github.com/TbusOS/vim-ide-enhanced.git
 cd vim-ide-enhanced
 bash install.sh
 ```
@@ -202,7 +202,7 @@ Ctrl-r  重做
 - 📖 阅读完整文档: [README.md](README.md)
 - 🎯 打印速查表: [CHEATSHEET.md](CHEATSHEET.md)
 - 🔧 学习配置: 编辑 `~/.vimrc`
-- 💬 加入讨论: [GitHub Discussions](https://github.com/YOUR_USERNAME/vim-ide-enhanced/discussions)
+- 💬 加入讨论: [GitHub Discussions](https://github.com/TbusOS/vim-ide-enhanced/discussions)
 
 ## 💡 小贴士
 

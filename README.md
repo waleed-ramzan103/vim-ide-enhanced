@@ -34,7 +34,7 @@
 ### 方法 1：一键安装（推荐）
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/vim-ide-enhanced.git
+git clone https://github.com/TbusOS/vim-ide-enhanced.git
 cd vim-ide-enhanced
 bash install.sh
 ```
@@ -576,5 +576,5 @@ MIT License
 
 **⭐ 如果这个配置对你有帮助，请给个 Star！**
 
-**📧 问题反馈：** [提交 Issue](https://github.com/YOUR_USERNAME/vim-ide-enhanced/issues)
+**📧 问题反馈：** [提交 Issue](https://github.com/TbusOS/vim-ide-enhanced/issues)
 
