@@ -10,6 +10,7 @@
 ## 📚 文档导航
 
 - 🚀 [快速上手指南](docs/QUICKSTART.md) - 5分钟快速入门教程
+- 🔌 [插件管理完全指南](docs/PLUGIN_MANAGEMENT.md) - 插件安装/更新/删除/主题切换详解
 - 📋 [快捷键速查表](docs/CHEATSHEET.md) - 可打印的快捷键参考卡片
 - 🎨 [主题配置指南](docs/THEMES.md) - 9个精选主题详细介绍
 - 🤝 [贡献指南](docs/CONTRIBUTING.md) - 如何为项目做贡献
@@ -66,6 +67,234 @@ mkdir -p ~/.vim/undo ~/.vim/plugged
 # 5. 安装插件
 vim +PlugInstall +qall
 ```
+
+## 🔌 插件管理详解
+
+本配置使用 [vim-plug](https://github.com/junegunn/vim-plug) 插件管理器，简单高效。
+
+### 📥 安装插件
+
+#### 方式一：命令行自动安装（推荐）
+
+```bash
+# 安装所有配置中的插件（首次使用或添加新插件后）
+vim +PlugInstall +qall
+
+# 更新所有插件到最新版本
+vim +PlugUpdate +qall
+
+# 清理已删除的插件
+vim +PlugClean +qall
+```
+
+**说明**：
+- `+PlugInstall` - 安装插件的 vim 命令
+- `+qall` - 完成后自动退出 vim
+- 整个过程自动完成，无需手动操作
+
+#### 方式二：在 vim 中手动安装
+
+```vim
+# 1. 打开 vim
+vim
+
+# 2. 输入命令（注意冒号）
+:PlugInstall          # 安装插件
+:PlugUpdate           # 更新插件
+:PlugUpgrade          # 更新 vim-plug 自身
+:PlugStatus           # 查看插件状态
+:PlugClean            # 清理未使用的插件
+```
+
+**操作步骤**：
+1. 输入 `:PlugInstall` 后按回车
+2. 等待安装完成（显示 "Done!"）
+3. 按 `q` 关闭安装窗口
+4. 按 `:q` 退出 vim
+
+### ➕ 添加新插件
+
+**步骤**：
+
+1. **编辑配置文件**
+   ```bash
+   vim ~/.vimrc
+   ```
+
+2. **在插件列表中添加**（约第 20-80 行）
+   ```vim
+   call plug#begin('~/.vim/plugged')
+   " ... 现有插件 ...
+   
+   " 添加新插件（格式：Plug '作者/仓库名'）
+   Plug 'junegunn/fzf.vim'           " 示例：添加 fzf 插件
+   Plug 'tpope/vim-surround'         " 示例：添加 surround 插件
+   
+   call plug#end()
+   ```
+
+3. **保存并安装**
+   ```bash
+   # 方式 1：退出 vim 后在命令行执行
+   vim +PlugInstall +qall
+   
+   # 方式 2：在 vim 中执行
+   :source ~/.vimrc    # 重新加载配置
+   :PlugInstall        # 安装新插件
+   ```
+
+### ❌ 删除插件
+
+**步骤**：
+
+1. **注释掉不需要的插件**
+   ```vim
+   " Plug 'unwanted/plugin'    # 在前面加 " 注释
+   ```
+
+2. **清理插件**
+   ```bash
+   # 方式 1：命令行
+   vim +PlugClean +qall
+   
+   # 方式 2：vim 中
+   :source ~/.vimrc
+   :PlugClean
+   ```
+
+### 🎨 切换主题
+
+**重要**：所有 9 个主题插件已经安装，**不需要再安装插件**！
+
+#### 方法 1：永久切换（修改配置）
+
+```bash
+# 编辑配置文件
+vim ~/.vimrc
+
+# 找到约第 120-135 行，修改注释：
+"silent! colorscheme gruvbox      # 注释掉当前主题
+silent! colorscheme dracula       # 取消注释想要的主题
+
+# 保存后重启 vim 或重新加载
+:source ~/.vimrc
+```
+
+#### 方法 2：临时切换（vim 中测试）
+
+```vim
+# 在 vim 中直接输入：
+:colorscheme dracula
+:colorscheme nord
+:colorscheme tokyonight
+:colorscheme palenight
+:colorscheme iceberg
+:colorscheme solarized
+:colorscheme onedark
+:colorscheme molokai
+:colorscheme gruvbox
+
+# 立即生效，但不保存到配置
+```
+
+### 📊 查看插件信息
+
+```bash
+# 查看已安装的插件列表
+ls ~/.vim/plugged/
+
+# 在 vim 中查看插件状态
+:PlugStatus
+
+# 查看某个插件的详细信息
+cd ~/.vim/plugged/nerdtree
+git log
+```
+
+### 🔧 插件故障排除
+
+**问题 1：插件安装失败**
+
+```bash
+# 检查网络连接
+ping github.com
+
+# 检查 vim-plug 是否安装
+ls ~/.vim/autoload/plug.vim
+
+# 手动安装 vim-plug
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
+**问题 2：某个插件不工作**
+
+```bash
+# 重新安装该插件
+cd ~/.vim/plugged
+rm -rf plugin-name
+vim +PlugInstall +qall
+```
+
+**问题 3：插件更新后出错**
+
+```bash
+# 回滚到之前的版本
+cd ~/.vim/plugged/plugin-name
+git log                    # 查看历史版本
+git checkout <commit-id>   # 回滚到指定版本
+```
+
+**问题 4：查看插件是否已安装**
+
+```bash
+# 方式 1：命令行
+ls ~/.vim/plugged/ | grep plugin-name
+
+# 方式 2：vim 中
+:PlugStatus
+```
+
+### 💡 插件管理技巧
+
+1. **定期更新插件**
+   ```bash
+   # 每月更新一次
+   vim +PlugUpdate +qall
+   ```
+
+2. **只更新特定插件**
+   ```vim
+   :PlugUpdate nerdtree
+   ```
+
+3. **查看更新内容**
+   ```vim
+   :PlugDiff
+   ```
+
+4. **并行安装加速**（vim-plug 默认支持）
+   - 多个插件同时下载
+   - 大大缩短安装时间
+
+5. **延迟加载优化**
+   ```vim
+   " 按需加载，提高启动速度
+   Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+   ```
+
+### 📚 插件列表
+
+当前配置包含 **27 个精选插件**：
+
+**文件管理** (3)：NERDTree、nerdtree-git-plugin、CtrlP
+**代码导航** (3)：Tagbar、cscope.vim、cscope_maps  
+**编辑增强** (4)：auto-pairs、vim-commentary、vim-visual-multi、vim-easymotion
+**语法增强** (3)：vim-cpp-enhanced-highlight、python-syntax、ALE
+**界面美化** (11)：vim-airline、vim-airline-themes + 9个主题
+**其他功能** (3)：vim-fugitive、indentLine、echofunc
+
+完整列表请查看 vimrc 文件第 20-80 行。
 
 ## 🔧 系统依赖
 

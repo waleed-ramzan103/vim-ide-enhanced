@@ -8,6 +8,7 @@
 ## 📚 文档导航
 
 - 🚀 [快速上手指南](docs/QUICKSTART.md) - 5分钟入门
+- 🔌 [插件管理指南](docs/PLUGIN_MANAGEMENT.md) - 插件安装/更新/删除完全指南
 - 📋 [快捷键速查表](docs/CHEATSHEET.md) - 可打印参考卡
 - 🎨 [主题配置指南](docs/THEMES.md) - 9个精选主题详解
 - 🤝 [贡献指南](docs/CONTRIBUTING.md) - 如何参与项目
@@ -56,6 +57,120 @@ mkdir -p ~/.vim/undo ~/.vim/plugged
 
 # 5. 安装插件
 vim +PlugInstall +qall
+```
+
+## 🔌 插件管理
+
+本配置使用 [vim-plug](https://github.com/junegunn/vim-plug) 作为插件管理器。
+
+### 安装插件
+
+#### 方法 1：自动安装（命令行）
+
+```bash
+# 安装所有插件（首次使用或添加新插件后）
+vim +PlugInstall +qall
+
+# 更新所有插件到最新版本
+vim +PlugUpdate +qall
+
+# 清理未使用的插件
+vim +PlugClean +qall
+```
+
+#### 方法 2：手动安装（在 vim 中）
+
+```vim
+" 打开 vim
+vim
+
+" 安装插件
+:PlugInstall
+
+" 更新插件
+:PlugUpdate
+
+" 升级 vim-plug 自身
+:PlugUpgrade
+
+" 查看插件状态
+:PlugStatus
+
+" 清理未使用的插件
+:PlugClean
+```
+
+### 添加新插件
+
+1. 编辑 `~/.vimrc`，在插件列表中添加：
+   ```vim
+   call plug#begin('~/.vim/plugged')
+   " 现有插件...
+   Plug 'author/plugin-name'  " 添加新插件
+   call plug#end()
+   ```
+
+2. 保存后安装：
+   ```bash
+   vim +PlugInstall +qall
+   ```
+
+### 删除插件
+
+1. 在 `~/.vimrc` 中删除或注释掉插件行：
+   ```vim
+   " Plug 'unwanted/plugin'  " 注释掉不需要的插件
+   ```
+
+2. 重启 vim 并清理：
+   ```vim
+   :source ~/.vimrc
+   :PlugClean
+   ```
+
+### 切换主题
+
+**所有主题插件已安装**，只需修改配置：
+
+```bash
+# 编辑 vimrc
+vim ~/.vimrc
+
+# 找到约第 120 行，注释/取消注释想要的主题：
+"silent! colorscheme gruvbox    # 注释掉
+silent! colorscheme dracula     # 取消注释
+
+# 或在 vim 中临时切换（不保存）：
+:colorscheme dracula
+:colorscheme nord
+:colorscheme tokyonight
+```
+
+### 常见问题
+
+**Q: 插件安装失败？**
+```bash
+# 检查网络连接
+curl -I https://github.com
+
+# 手动克隆插件
+cd ~/.vim/plugged
+git clone https://github.com/preservim/nerdtree.git
+```
+
+**Q: 如何查看已安装的插件？**
+```bash
+ls ~/.vim/plugged/
+# 或在 vim 中
+:PlugStatus
+```
+
+**Q: 插件更新后出错？**
+```bash
+# 回滚到之前的版本
+cd ~/.vim/plugged/plugin-name
+git log  # 查看历史
+git checkout commit-hash
 ```
 
 ## 🔧 依赖工具

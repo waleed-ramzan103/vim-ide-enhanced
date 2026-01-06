@@ -12,6 +12,34 @@ bash install.sh
 
 等待插件安装完成。
 
+### 🔌 插件安装说明
+
+**自动安装（推荐）**：
+```bash
+# 安装所有插件
+vim +PlugInstall +qall
+
+# 更新所有插件
+vim +PlugUpdate +qall
+```
+
+**手动安装**：
+```vim
+# 打开 vim
+vim
+
+# 输入命令安装
+:PlugInstall
+
+# 安装完成后按 q 关闭窗口
+```
+
+**验证安装**：
+```bash
+# 查看已安装的插件
+ls ~/.vim/plugged/
+```
+
 ## 🎮 第一次使用（2分钟）
 
 ### 1. 打开文件
