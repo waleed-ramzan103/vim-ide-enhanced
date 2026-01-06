@@ -136,6 +136,11 @@ silent! colorscheme gruvbox           " 默认：复古护眼，暖色
 "silent! colorscheme solarized        " 经典Solarized暗色
 "set background=light                 " 取消注释使用亮色版
 
+" 如果主题未安装或加载失败，使用默认配色
+if !exists('g:colors_name')
+    colorscheme default
+endif
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => 编辑器行为
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
