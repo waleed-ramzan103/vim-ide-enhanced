@@ -5,6 +5,16 @@
 ![Vim Version](https://img.shields.io/badge/Vim-8.0%2B-green.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
+## 📚 文档导航
+
+- 🚀 [快速上手指南](docs/QUICKSTART.md) - 5分钟入门
+- 📋 [快捷键速查表](docs/CHEATSHEET.md) - 可打印参考卡
+- 🎨 [主题配置指南](docs/THEMES.md) - 9个精选主题详解
+- 🤝 [贡献指南](docs/CONTRIBUTING.md) - 如何参与项目
+- 📝 [更新日志](docs/CHANGELOG.md) - 版本更新记录
+- 🚀 [发布指南](docs/PUBLISH_GUIDE.md) - GitHub发布步骤
+- 📊 [项目详情](docs/PROJECT_INFO.md) - 项目完整信息
+
 ## ✨ 特性
 
 - 🌳 **文件浏览器** - NERDTree 提供类似 VSCode 的文件树

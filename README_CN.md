@@ -7,6 +7,16 @@
 ![Vim Version](https://img.shields.io/badge/Vim-8.0%2B-green.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
+## 📚 文档导航
+
+- 🚀 [快速上手指南](docs/QUICKSTART.md) - 5分钟快速入门教程
+- 📋 [快捷键速查表](docs/CHEATSHEET.md) - 可打印的快捷键参考卡片
+- 🎨 [主题配置指南](docs/THEMES.md) - 9个精选主题详细介绍
+- 🤝 [贡献指南](docs/CONTRIBUTING.md) - 如何为项目做贡献
+- 📝 [更新日志](docs/CHANGELOG.md) - 版本更新详细记录
+- 🚀 [GitHub发布指南](docs/PUBLISH_GUIDE.md) - 完整发布步骤
+- 📊 [项目完整信息](docs/PROJECT_INFO.md) - 技术细节和统计
+
 ## ✨ 主要特性
 
 ### 🎯 核心功能
