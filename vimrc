@@ -66,9 +66,15 @@ Plug 'vim-python/python-syntax'
 Plug 'Yggdroot/indentLine'
 
 " 颜色主题
-Plug 'morhetz/gruvbox'
-Plug 'joshdick/onedark.vim'
-Plug 'tomasr/molokai'
+Plug 'morhetz/gruvbox'              " 复古护眼，暖色调
+Plug 'joshdick/onedark.vim'         " Atom编辑器配色
+Plug 'tomasr/molokai'               " Sublime Text风格
+Plug 'dracula/vim', { 'as': 'dracula' }  " Dracula暗色主题
+Plug 'altercation/vim-colors-solarized'  " 经典Solarized（亮/暗）
+Plug 'arcticicestudio/nord-vim'     " 北欧冷色调
+Plug 'ghifarit53/tokyonight-vim'    " 东京夜景
+Plug 'drewtempelmeyer/palenight.vim' " Material Palenight
+Plug 'cocopon/iceberg.vim'          " 蓝色基调，舒适
 
 " 快速移动
 Plug 'easymotion/vim-easymotion'
@@ -111,10 +117,24 @@ set colorcolumn=80,120        " 80和120列高亮
 set t_Co=256                  " 256色支持
 set background=dark
 
-" 颜色主题（可选其他主题：onedark, molokai）
-silent! colorscheme gruvbox
-"silent! colorscheme onedark
-"silent! colorscheme molokai
+" 颜色主题（取消注释来切换主题）
+" ===== 暖色调 =====
+silent! colorscheme gruvbox           " 默认：复古护眼，暖色
+"silent! colorscheme dracula          " 流行暗色，紫色调
+"silent! colorscheme molokai          " 高对比，适合演示
+
+" ===== 中性色调 =====
+"silent! colorscheme onedark          " Atom风格，现代简洁
+"silent! colorscheme palenight        " Material风格，柔和
+"silent! colorscheme tokyonight       " 东京夜景，流行
+
+" ===== 冷色调 =====
+"silent! colorscheme nord             " 北欧风，冷色优雅
+"silent! colorscheme iceberg          " 蓝色基调，护眼
+
+" ===== 经典主题 =====
+"silent! colorscheme solarized        " 经典Solarized暗色
+"set background=light                 " 取消注释使用亮色版
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => 编辑器行为

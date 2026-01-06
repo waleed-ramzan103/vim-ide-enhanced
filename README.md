@@ -210,10 +210,24 @@ silent! colorscheme onedark
 silent! colorscheme molokai
 ```
 
-可用主题：
-- `gruvbox` - 复古配色，护眼舒适（默认）
-- `onedark` - Atom 编辑器配色
-- `molokai` - 基于 Monokai 的配色
+可用主题（9个精选）：
+
+**暖色调：**
+- `gruvbox` - 复古配色，护眼舒适（默认）⭐
+- `dracula` - 流行暗色主题，紫色调
+- `molokai` - 高对比度，适合演示
+
+**中性色调：**
+- `onedark` - Atom 编辑器风格，现代简洁
+- `palenight` - Material 风格，柔和配色
+- `tokyonight` - 东京夜景，近期流行
+
+**冷色调：**
+- `nord` - 北欧风格，冷色优雅
+- `iceberg` - 蓝色基调，舒适护眼
+
+**经典：**
+- `solarized` - 经典 Solarized（支持亮色/暗色）
 
 ## 🐍 Python 开发配置
 

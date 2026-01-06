@@ -159,10 +159,24 @@ cscope -bkq -i cscope.files
 silent! colorscheme gruvbox
 ```
 
-可用主题：
-- `gruvbox` - 复古护眼配色（默认）
-- `onedark` - Atom 风格配色
-- `molokai` - Sublime Text 风格配色
+可用主题（9款精选）：
+
+**暖色调：**
+- `gruvbox` - 复古护眼配色（默认）⭐ 推荐长时间编程
+- `dracula` - 流行暗色主题，紫色调，GitHub 20k+ stars
+- `molokai` - 高对比度，适合演示和展示
+
+**中性色调：**
+- `onedark` - Atom 风格，现代简洁，广受欢迎
+- `palenight` - Material 风格，柔和舒适
+- `tokyonight` - 东京夜景主题，近期流行
+
+**冷色调：**
+- `nord` - 北欧风格，冷色优雅，适合专注编码
+- `iceberg` - 蓝色基调，护眼舒适
+
+**经典：**
+- `solarized` - 科学配色的经典主题（支持亮色/暗色切换）
 
 ### 自定义快捷键
 
